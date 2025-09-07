@@ -92,11 +92,11 @@ export const categories = [
 ];
 
 export const brands = [
-  { id: 1, name: 'Informa', slug: 'informa', logo: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=INFORMA' },
-  { id: 2, name: 'Asco', slug: 'asco', logo: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=ASCO' },
-  { id: 3, name: 'Lumin', slug: 'lumin', logo: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=Lumin' },
-  { id: 4, name: 'Terra', slug: 'terra', logo: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=Terra' },
-  { id: 5, name: 'Fjord', slug: 'fjord', logo: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=Fjord' },
+  { id: 1, name: 'Informa', slug: 'informa', logo: 'https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=INFORMA' },
+  { id: 2, name: 'Asco', slug: 'asco', logo: 'https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=ASCO' },
+  { id: 3, name: 'Lumin', slug: 'lumin', logo: 'https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=Lumin' },
+  { id: 4, name: 'Terra', slug: 'terra', logo: 'https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=Terra' },
+  { id: 5, name: 'Fjord', slug: 'fjord', logo: 'https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/120x60/1f2937/ffffff?text=Fjord' },
 ];
 
 export const heroBanners = [
@@ -151,7 +151,7 @@ const generateProduct = (id) => {
   };
 };
 
-export const products = Array.from({ length: 100 }, (_, index) => generateProduct(index + 1));
+export const products = Array.from({ length: 200 }, (_, index) => generateProduct(index + 1));
 
 // --- DERIVED DATA ---
 

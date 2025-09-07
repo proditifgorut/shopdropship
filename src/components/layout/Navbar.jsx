@@ -8,7 +8,8 @@ import {
   UserIcon,
   Bars3Icon,
   XMarkIcon,
-  ShoppingBagIcon
+  ShoppingBagIcon,
+  CogIcon
 } from '@heroicons/react/24/outline';
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
 
@@ -102,17 +103,28 @@ const Navbar = () => {
                   />
                   <span className="hidden md:block text-sm font-medium">{user.name}</span>
                 </button>
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  {user.role === 'admin' && (
+                    <Link
+                      to="/admin"
+                      className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      <CogIcon className="h-5 w-5 mr-2" />
+                      Admin Dashboard
+                    </Link>
+                  )}
                   <Link
                     to="/profile"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <UserIcon className="h-5 w-5 mr-2" />
                     Profile
                   </Link>
                   <Link
                     to="/wishlist"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                     <HeartIcon className="h-5 w-5 mr-2" />
                     Wishlist
                   </Link>
                   <button
